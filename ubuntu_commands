@@ -1,0 +1,171 @@
+
+1.  Firewall
+    sudo ufw disable ,sudo ufw enable
+
+2.  JDK
+    sudo apt-get install python-software-properties
+    sudo add-apt-repository ppa:webupd8team/java
+    sudo apt-get update
+    sudo apt-get install oracle-java8-installer
+
+    To set the JAVA_HOME environment variable, which is needed for some programs,
+    first find out the path of your Java installation:
+
+    sudo su
+    which java
+    gedit .bashrc
+   
+    JAVA_HOME=/usr/lib/jvm/java-8-oracle/bin
+    export JAVA_HOME
+    PATH=$PATH:$JAVA_HOME
+    export PATH
+
+3.  Upgrade Firefox
+    sudo add-apt-repository ppa:mozillateam/firefox-next
+    sudo apt-get update
+    sudo apt-get install firefox
+
+
+4.  Install Eclipse
+    mkdir STS
+    cd STS
+    tar zxvf ~/Downloads/spring-tool-suite-3.7.0.RELEASE-e4.5-linux-gtk-x86_64.tar.gz
+    Now Open 
+    ./STS &
+
+5.  sudo apt-get update
+    sudo apt-get install mysql-server
+    user : root pass: sami
+    
+    Testing MySQL
+    systemctl status mysql.service
+    mysqladmin -p -u root version
+    
+    To access MySQL
+    mysql -u root -p
+    
+    Now Install MySQL Workbench
+    sudo apt-get update
+    sudo apt install mysql-workbench
+    
+    To Launch MySQL Workbench
+    mysql-workbench
+
+
+6.  sudo add-apt-repository ppa:gerardpuig/ppa
+    sudo apt-get update
+    sudo apt-get install ubuntu-cleaner
+    wget https://www.dropbox.com/s/l114qark0lc26k1/ubuntu-cleaner_1.0.0-1_all.deb
+    sudo dpkg -i ubuntu-cleaner_1.0.0-1_all.deb
+    sudo apt install -f
+    AND To Remove It:
+    sudo apt-get remove ubuntu-cleaner
+    sudo apt-get autoremove
+
+
+
+7.  sudo apt-get update
+    sudo apt-get install nodejs
+    sudo apt-get install npm
+    sudo apt install ng
+    npm install -g @angular/cli
+    ng new my-app
+    cd my-app
+    ng serve --open
+   
+
+
+8.  sudo add-apt-repository ppa:webupd8team/sublime-text-3
+    sudo apt-get update
+    sudo apt-get install sublime-text-installer
+
+
+9.  sudo /opt/lampp/lampp start
+    sudo /opt/lampp/lampp stop
+    sudo chmod +x /opt/lampp/uninstall
+    sudo /opt/lampp/uninstall
+    sudo rm -r /opt/lampp
+    sudo chmod 777 htdocs  ---->giving permission to htdocs
+    mysql -u root -h 127.0.0.1 -p
+    
+    
+    sudo ln -s /opt/lampp/bin/php /usr/local/bin/php
+
+    sudo apt-get install curl
+    sudo apt-get curl https://getcomposer.org/installer
+    sudo mv composer.phar /usr/local/bin/composer
+
+    XAMPP Short Cut
+    sudo apt-get install gksu
+    gksu gedit /usr/share/applications/xampp-control-panel.desktop
+    [Desktop Entry]
+	Encoding=UTF-8
+	Name=XAMPP Control Panel
+	Comment=Start and Stop XAMPP
+	Exec=gksudo /opt/lampp/manager-linux-x64.run
+	Icon=/opt/lampp/htdocs/favicon.ico
+	Categories=Application
+	Type=Application
+	Terminal=false
+
+
+10. Unrar : unrar x -r /location/filename.rar
+
+11. sudo dpkg -i teamviewer_13.0.9865_amd64.deb
+    sudo apt-get -f install
+
+12. How to Upload Project Into Bitbucket:
+    git init
+    git add -A
+    git commit -m "First Commit"
+    git remote add origin %repo link from bitbucket.org%
+    git push -u origin master
+
+13. sudo npm install -g @angular/cli
+
+14. Permission Trash Folder:.
+    sudo chown -R $USER:$USER ~/.local/share/Trash/
+    sudo chmod -R 700 ~/.local/share/Trash/
+    To Delete Trash Folder Data: sudo rm -rf ~/.local/share/Trash/*
+
+
+
+15. sudo npm install -g json-server
+    json-server -p 5555 products.json
+
+     ng serve
+    Angular:
+    1.Generating Component : ng g c home
+    2.Installing bootstrap : npm install bootstrap@3 --save & "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+    npm i -g npm
+
+
+
+16. https://www.freecoursesonline.us/
+    https://www.thefreetutorials.com/quick-introduction-asp-net-mvc-core-2-0/
+    https://www.freetutorials.us/asp-net-core-asp-net-5mvc-6cangular4-ef-crash-course/
+    https://www.udemy.com/quick-introduction-to-aspnet-mvc-core-20/learn/v4/content
+
+17. >NET Core :
+     npm install --global yo
+     wget -q packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
+     sudo dpkg -i packages-microsoft-prod.deb
+
+     sudo apt-get install apt-transport-https
+     sudo apt-get update
+     sudo apt-get install dotnet-sdk-2.1.200
+     sudo npm install -g yo generator-aspnetcore-spa
+     Creating A New Project : yo aspnetcore-spa
+     https://www.youtube.com/watch?v=Ngkzh4Stfzw
+     https://github.com/dotnet/core/blob/master/release-notes/download-archives/1.1.6-sdk-download.md
+     https://tecadmin.net/install-visual-studio-code-editor-ubuntu/
+
+     https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools.DotNet/2.0.1
+
+     VC : Angular v5,Auto Import,ASP .NET Helper,Beautify,C#,C# Extension,Pomelo.EntityFrameworkCore.MySql
+
+     sudo apt-get remove dotnet-sdk-1.1.9
+     https://www.junian.net/2017/01/running-your-first-aspnet-core-web-app-on-ubuntu-16-04.html
+
+     dotnet restore
+     https://www.junian.net/2017/01/running-your-first-aspnet-core-web-app-on-ubuntu-16-04.html
