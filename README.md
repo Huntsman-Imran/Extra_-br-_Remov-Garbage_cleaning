@@ -6,7 +6,7 @@
 # Garbage_cleaning-imran 1
 
 
- imran allauddin hossain 3+1=4
+ imran+allauddin=1 hossain a+b
 
 
 
