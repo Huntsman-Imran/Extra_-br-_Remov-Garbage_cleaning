@@ -11,6 +11,20 @@
     To set the JAVA_HOME environment variable, which is needed for some programs,
     first find out the path of your Java installation:
 
+(fist)
+     home variable setup: 
+     sudo gedit /etc/profile 
+                -> profile file will be popup
+                -> the write there 
+                ->export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+                ->sve 
+
+     for checking you can use: echo $JAVA_HOME
+
+     way to delete a directory: sudo rm -rf intellije/
+                          
+                                      
+(second)
     sudo su
     which java
     gedit .bashrc
@@ -27,6 +41,12 @@
 
 
 4.  Install Eclipse
+
+first-> 
+           download latest eclips ee version and unzip it
+	   us command line to copy into opt file -> sudo cp -r intellije /opt
+	   use 
+second->
     mkdir STS
     cd STS
     tar zxvf ~/Downloads/spring-tool-suite-3.7.0.RELEASE-e4.5-linux-gtk-x86_64.tar.gz
