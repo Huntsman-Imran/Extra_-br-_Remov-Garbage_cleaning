@@ -24,16 +24,7 @@ very important to give read and write authority ->sudo -H nautilus
 
      way to delete a directory: sudo rm -rf intellije/
                           
-                                      
-(second)
-    sudo su
-    which java
-    gedit .bashrc
-   
-    JAVA_HOME=/usr/lib/jvm/java-8-oracle/bin
-    export JAVA_HOME
-    PATH=$PATH:$JAVA_HOME
-    export PATH
+                                     
 
 3.  Upgrade Firefox
     sudo add-apt-repository ppa:mozillateam/firefox-next
