@@ -128,6 +128,18 @@ sudo apt-get update
 	Terminal=false
 
 
+10. Heroku configuration
+
+    ->brew install heroku/brew/heroku
+    
+    -> sudo snap install heroku --classic
+    
+   -> heroku login
+      Enter your Heroku credentials.
+      Email: java@example.com
+      Password:
+
+
 10. Unrar : unrar x -r /location/filename.rar
 
 11. sudo dpkg -i teamviewer_13.0.9865_amd64.deb
