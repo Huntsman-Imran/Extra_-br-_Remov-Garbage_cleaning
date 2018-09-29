@@ -1,4 +1,10 @@
 very important to give read and write authority ->sudo -H nautilus
+
+upwork tiem tracker installation:
+    sudo dpkg -i packagename.deb
+    sudo apt-get -f install
+
+
 1(a). Git Installtion
     sudo apt-get install git-core
     git --version
