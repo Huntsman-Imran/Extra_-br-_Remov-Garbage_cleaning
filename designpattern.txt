@@ -1,0 +1,26 @@
+1.Factory Design pattern
+
+	pros and corn of abstract design pattern?
+	https://kodelog.wordpress.com/2013/04/08/factory-design-pattern/
+	why do we need abstract design pattern?
+	https://www.quora.com/Why-do-we-need-factory-design-patterns
+
+	2. Abstract Factory Design Pattern
+
+	Real life example:
+
+	A real life example for the use of the Abstract Factory pattern is providing data access to two different data sources (e.g. a SQL Database and a XML file). You have two different data access     classes (a gateway to the datastore). Both inherit from a base class that defines the common methods to be implemented (e.g. Load, Save, Delete).
+
+	Which data source shall be used shouldn't change the way client code retrieves it's data access class. Your Abstract Factory knows which data source shall be used and returns an appropriate instance on request. The factory returns this instance as the base class type.
+
+	Ref:https://stackoverflow.com/questions/2280170/why-do-we-need-abstract-factory-design-pattern
+
+
+3. Bulider Design Pattern
+
+	   https://javarevealed.wordpress.com/2013/08/12/builder-design-pattern/
+
+	   Real Life Example:
+	   https://stackoverflow.com/questions/5211039/real-world-examples-of-the-builder-pattern
+           https://github.com/dparoulek/java-koans/tree/master/src/main/java/com/upgradingdave/koans/builder
+
