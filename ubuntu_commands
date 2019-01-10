@@ -1,5 +1,9 @@
 very important to give read and write authority ->sudo -H nautilus
 
+Anydesk installation
+    https://www.linuxhelp.com/how-to-install-anydesk-on-ubuntu-16-04
+
+
 upwork tiem tracker installation:
     sudo dpkg -i packagename.deb
     sudo apt-get -f install
